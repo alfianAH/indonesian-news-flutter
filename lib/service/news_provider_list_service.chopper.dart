@@ -18,7 +18,7 @@ class _$NewsProviderListService extends NewsProviderListService {
 
   @override
   Future<Response<NewsProviderListResponse>> getNewsProvider() {
-    final $url = '/';
+    final $url = '.';
     final $request = Request('GET', $url, client.baseUrl);
     return client
         .send<NewsProviderListResponse, NewsProviderListResponse>($request);

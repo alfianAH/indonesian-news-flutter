@@ -9,7 +9,7 @@ abstract class NewsProviderListService extends ChopperService{
 
   static NewsProviderListService create(){
     final client = ChopperClient(
-      baseUrl: "https://berita-indo-api.vercel.app/v1/",
+      baseUrl: "https://berita-indo-api.vercel.app/",
       services: [
         _$NewsProviderListService(),
       ],
@@ -21,6 +21,6 @@ abstract class NewsProviderListService extends ChopperService{
     return _$NewsProviderListService(client);
   }
 
-  @Get(path: '/')
+  @Get(path: '.')
   Future<Response<NewsProviderListResponse>> getNewsProvider();
 }
